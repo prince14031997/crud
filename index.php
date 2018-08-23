@@ -9,6 +9,24 @@
 <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+<Style>
+#last-thing{
+  margin-bottom: 0;
+    padding: 10px;
+    text-align: center;
+    padding-top: 30px;
+    color: white;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Monoton', cursive
+}
+
+
+.col3{
+    margin-top:20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+</Style>
 </head>
 <body>
 
@@ -37,7 +55,7 @@
 <div class="container">
 <div class="row">
 <div class="col-sm-6 col1">
-<div class="card">
+<div class="card card1">
   <div class="card-body">
   <?php
     if(isset($_POST["insert"])){
@@ -87,6 +105,25 @@
 </div>
 </div>
 
+<div class="container">
+<div class="row">
+<div class="col-sm-6 col3">
+<div class="card">
+  <img class="card-img-top" src="images/laptop1.jpg" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">Programmer</h4>
+    <p class="card-text">Programming is a super power if you know this you do anything.</p>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container-fluid">
+<footer>
+<h4 style="margin-top:20px;"id = "last-thing">CREATED BY PRINCE RATHORE</h4>
+</footer>
+</div>
 <script>
 /* Open when someone clicks on the span element */
 function openNav() {

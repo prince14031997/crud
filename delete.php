@@ -45,6 +45,17 @@ body{
     margin-right: auto;
 }
 
+#last-thing{
+  margin-bottom: 0;
+    padding: 10px;
+    text-align: center;
+    padding-top: 30px;
+    color: white;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Monoton', cursive
+}
+
+
 </style>
 </head>
 <body>
@@ -64,6 +75,26 @@ body{
             </form>
         </div>
     </div>
+</div>
+
+<div class="container">
+<div class="row">
+<div class="col-sm-6 col3"style="margin-top:20px">
+<div class="card">
+  <img class="card-img-top" src="images/laptop1.jpg" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">Programmer</h4>
+    <p class="card-text">Programming is a super power if you know this you do anything.</p>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container-fluid">
+<footer>
+<h4 style="margin-top:20px;"id = "last-thing">CREATED BY PRINCE RATHORE</h4>
+</footer>
 </div>
 </body>
 </html>
