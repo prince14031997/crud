@@ -43,6 +43,7 @@
   <!-- Overlay content -->
   <div class="overlay-content">
     <a href="delete.php">Delete quotes</a>
+    <a href="quotes.php">My favourite quotes</a>
 
   </div>
 
@@ -61,8 +62,10 @@
     if(isset($_POST["insert"])){
       include "connection.php";
 
-      $sql = "INSERT INTO users(name, thought)
-      VALUES('".strtolower($_POST["name"])."','".$_POST["thought"]."')";
+      // $sql = "INSERT INTO users(name, thought)
+      // VALUES('".strtolower($_POST["name"])."','".$_POST["thought"]."')";
+
+      $sql = "INSERT INTO users(name, thought) VALUES ('". $_POST["name"] . "','" . $_POST["thought"] . "')";
 
       mysqli_query($connection, $sql);
     }
@@ -97,7 +100,8 @@
 </div>
 <div class="form-group">
   <label for="thought">Thought:</label>
-  <input type="text" class="form-control" id="thought" name="thought"required>
+  <!-- <input type="text" class="form-control" id="thought" name="thought" required> -->
+  <textarea name="thought" id="thought" class="form-control" required></textarea>
 </div>
 <input type="submit" class="btn btn-primary btn-lg btn-block" name="insert">
 </form>
